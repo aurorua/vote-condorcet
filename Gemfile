@@ -7,6 +7,8 @@ gem 'rails', '4.2.3'
 gem 'sqlite3'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
+#use bootstrap
+gem 'bootstrap-sass', '3.2.0.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
@@ -50,6 +52,9 @@ group :development, :test do
 
   #Capybara for feature tests
   gem 'capybara', '~> 2.6', '>= 2.6.2'
+
+  #Factory_girl for test data
+  gem 'factory_girl_rails'
 
 end
 

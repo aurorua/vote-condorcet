@@ -31,5 +31,18 @@ module Vote
 
     # Do not swallow errors in after_commit/after_rollback callbacks.
     config.active_record.raise_in_transactional_callbacks = true
+
+    # don't generate RSpec tests for views and helpers.
+    config.generators do |g|
+      g.test_framework :rspec, fixture: true
+      g.fixture_replacement :factory_girl, dir: 'spec/factories' 
+
+      g.view_specs true
+      g.helper_specs false
+    end
+
+    config.generators do |g|
+      g.factory_girl false
+    end
   end
 end
