@@ -44,5 +44,9 @@ group :development, :test do
 
   #Rspec for test driven development
   gem 'rspec-rails'
+
+  #Capybara for feature tests
+  gem 'capybara', '~> 2.6', '>= 2.6.2'
+
 end
 
