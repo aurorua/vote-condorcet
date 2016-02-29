@@ -28,6 +28,9 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 #For authentication
 gem 'devise'
 
+# Provides daylight savings aware transformations between times in different time zones
+gem 'tzinfo-data'
+
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
